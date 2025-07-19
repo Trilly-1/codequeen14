@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    
+<div class = "container">
+        <h2>Contact Us Form</h2>
+
+    <form action="">
+        <label for="name">Full name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required/>
+
+        <label for="email">Email address</label>
+        <input type="text" id="email" name = "email" placeholder="email@gmail.com" required>
+
+        <label for="phone number">Phone Number</label>
+        <input type="text" id="phone number" name="Phone Number" placeholder="+256 XXXXXXXXX">
+
+        <label for="message">Comment</label>
+        <textarea name="message" id="message" rows="4" required></textarea>
+
+        <button>SUBMIT</button>
+
+
+    </form>
+</div>
+</body>
+
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background: wheat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .container{
+        background: white;
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0);
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .container h2{
+        margin-bottom: 20px;
+        text-align: center;
+        color: #333;
+    }
+
+    form label{
+        display: block;
+        margin-top: 15px;
+        margin-bottom: 5px;
+        color: #555;
+
+    }
+
+    form input, form textarea{
+        width: 200px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        box-sizing: border-box;
+    }
+
+    form button{
+        margin-top: 20px;
+        width: 100%;
+        padding: 12px;
+        background: rgb(111, 68, 230);
+        color: white;
+        border: none;
+        border-radius: 6px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background 0.3s;  
+    }
+
+    form button:hover{
+        background: rgb(152, 152, 224);
+    }
+
+</style>
+</html>
